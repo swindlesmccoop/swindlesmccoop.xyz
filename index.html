@@ -1,66 +1,77 @@
 <!DOCTYPE html>
 
-<html>
-<head>
-
-  <title>Home of Swindles</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<! -- Styling -->
+<link rel="stylesheet" href="sitewide.css">
+<link rel="shortcut icon" type="image/png" href="images/dalain.png"/>
 
 <style>
-p {
-  text-align: center;
-  font-size: 20px;
-}
-
 h3 {
-  text-align: center;
-  font-size: 15px;
-}
-
-h2 {text-align: center;}
-
-body {text-align: center;}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: tan;
-  color: red;
-  text-align: center;
+color: white;
 }
 </style>
 
-</head>
+<!–– Metadata ->
+<title>Home of Swindles</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A lot of random personal stuff, I guess">
+<meta name="keywords" content="swindlesmccoop">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
-<body>
-<img src="header.png" alt="Header" style="width:50%;">
-<h1>Become <strike>based</strike> fumo with me!</h1>
-<h2>Check out my stuff:</h2>
+<!-- Main -->
+<h1>Close this website, Open the next</h1>
+<h2>Stuff I Made:</h2>
+<h3>
+<a href="linux/">Personal Linux Scripts/Configs</a>
+<br>
+<a href="link/gamebanana.html">Mods</a>
+<br>
+<a href="P4GPC-Randomizer">Persona 4 Golden PC Randomizer</a>
+<br>
+<a href="link/youtube.html">YouTube Channel</a>
+<br>
+</h3>
 
-<p><a href="https://github.com/swindlesmccoop/">Github</a>
+<h3>
 <br>
-<a href="https://gamebanana.com/members/1725413/">Mods</a>
+<img src="images/selinux.png" style="height:30px;" alt="Serial Experiments Linux">
+<a href="rss.xml"><img src="images/rss.png" alt="RSS Feed" style="height:24px;"></a>
 <br>
-<a href="https://swindlesmccoop.github.io/P4GPC-Randomizer/">Persona 4 Golden PC Randomizer</a>
+<a href="blogindex.html">Post Index</a>
 <br>
-<a href="https://files.cbps.xyz/archive/Windows%2011-Insider-Preview-22000.51.iso">Windows 11 ISO (No Secure Boot or TPM Needed)</a>
+<a href="2021.html">2021 Posts</a>
 <br>
-<a href="https://www.youtube.com/channel/UCLtI6aq4G8zinQjUcsxgEXA/">YouTube Channel</a></p>
-</body>
 <br>
-<h2>More <a href="https://swindlesmccoop.cbps.xyz/about">about me</a></h2>
+More <a href="about">about me</a>
+</h3>
+
+<h2>Contact</h2>
+<h3>
+<a href="javascript:" title="7174892369">Signal</a><br>
+<a href="javascript:" title="7174892369">Telegram</a><br>
+<a href="javascript:" title="swindles#0517">Discord</a><br>
+<br>If you have none of these, you can <a href="mailto:swindlesmcoop@gmail.com">email me</a><br>
+
+</h3>
+<br>
+<br>
+<br>
 
 <div class="footer">
-  <h3><a href="https://github.com/swindlesmccoop/swindlesmccoop.cbps.xyz">This website is open source!</a><br>Warning: not actively maintained. Repo hopefully updated every night.</p>
-</div>
+<a href="link/source.html" style="color: #00EF00;">Download Source Code</a>
+<br>
+<img src="images/navi.png" style="height:50px;">
 
-</html>
+<script>function show(event) {
+    var text = document.createTextNode(event.target.title);
+    event.target.replaceWith(text);
+    var selection = window.getSelection();
+    var range = document.createRange();
+    range.selectNodeContents(text);
+    selection.removeAllRanges();
+    selection.addRange(range);
+} var dynamicLinks = document.querySelectorAll('a[href="javascript:"]'); for (var i = 0; i < dynamicLinks.length; i++) {
+    dynamicLinks[i].addEventListener('click', show);
+}
+</script>
+
+</div>

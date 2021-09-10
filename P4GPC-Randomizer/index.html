@@ -1,66 +1,79 @@
 <!DOCTYPE html>
 
-<html>
-<head>
+<!-- Stylesheet -->
+<link rel="stylesheet" href="/p4g.css">
 
-  <title>Home of Swindles</title>
-
+<!-- Metadata and stuff -->
+<meta charset="UTF-8">
+<title>Persona 4 Golden PC Edition Randomizer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Uses shell scripts to randomize files for the Windows edition of Persona 4 Golden" />
+<meta property="twitter:title" content="P4GPC Randomizer" />
 
-<style>
-p {
-  text-align: center;
-  font-size: 20px;
-}
+<!-- Start of site -->
+<h1><a href="https://github.com/swindlesmccoop/P4GPC-Randomizer/">Github Repository</a></h1>
+<h1>Persona 4 Golden PC Edition Randomizer</h1>
 
-h3 {
-  text-align: center;
-  font-size: 15px;
-}
+<h3>Why this exists</h3>
+<p>Randomizers are fun, and there's not really one for P4G on Windows that really randomizes everything, just encounters.</p>
 
-h2 {text-align: center;}
-
-body {text-align: center;}
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: tan;
-  color: red;
-  text-align: center;
-}
-</style>
-
-</head>
-
-<body>
-<img src="header.png" alt="Header" style="width:50%;">
-<h1>Become <strike>based</strike> fumo with me!</h1>
-<h2>Check out my stuff:</h2>
-
-<p><a href="https://github.com/swindlesmccoop/">Github</a>
+<h3 id="warnings" style="color: red;">Warnings (PLEASE READ!)</h3>
+<p>If you want to take full advantage of this mod, this must be the only one that you use (aside from any music mods). If you really want to use other mods with it (not recommended) make sure you put the randomizer at the LOWEST PRIORITY! This way, the majority of the randomizer files will still be copied to your <code>mods</code> directory but the mods on top will still be applied.
 <br>
-<a href="https://gamebanana.com/members/1725413/">Mods</a>
-<br>
-<a href="https://swindlesmccoop.github.io/P4GPC-Randomizer/">Persona 4 Golden PC Randomizer</a>
-<br>
-<a href="https://files.cbps.xyz/archive/Windows%2011-Insider-Preview-22000.51.iso">Windows 11 ISO (No Secure Boot or TPM Needed)</a>
-<br>
-<a href="https://www.youtube.com/channel/UCLtI6aq4G8zinQjUcsxgEXA/">YouTube Channel</a></p>
-</body>
-<br>
-<h2>More <a href="https://swindlesmccoop.cbps.xyz/about">about me</a></h2>
+<p>Also, make sure to back up your saves often.</p>
 
-<div class="footer">
-  <h3><a href="https://github.com/swindlesmccoop/swindlesmccoop.cbps.xyz">This website is open source!</a><br>Warning: not actively maintained. Repo hopefully updated every night.</p>
-</div>
+<h3 id="credits">Credits</h3>
+<ul>
+  <li><a href="https://github.com/shrinefox">ShrineFox</a> for the original randomizer that gave me the inspiration to make my own</li>
+  <li><a href="https://github.com/Pioziomgames">Pioziomgames</a> for a tree listing of data_e</li>
+  <li><a href="https://github.com/FMudanyali">Furkan</a> for helping with my stupid questions</li>
+  <li><a href="https://github.com/natano">Natano</a> for giving me the "poggers" function, seriously - look at the scripts for yourself, you'll find it (I named it, though)</li>
+  <li><a href="https://github.com/TGEnigma">TGE</a> for the mod loader and Preapp File</li>
+  <li><a href="https://github.com/TekkaGB">Tekka</a> for testing scripts and helping with changes</li>
+  <li>The collective of the P4G Modding Discord (at least, that's what it still is in my heart)</li>
+</ul>
 
-</html>
+<h2 id="instructions">Instructions</h2>
+
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+  <li>A Windows machine (if you use Linux, you don't need me to tell you what to do)</li>
+  <li>A version of Persona 4 Golden <a href="https://gamebanana.com/tuts/13379">set up for modding</a></li>
+  <li>Running <a href="link/dotnet.html">this installer</a> by downloading it and right clicking on it and pressing <code>Run with PowerShell</code></li>
+  <li><a href="https://github.com/TGEnigma/preappfile/releases/latest/">TGE's Preapp File</a></li>
+</ul>
+
+<h3 id="beginner">Level 1 Crook Steps (<em>Noobs and Beginners should follow this!</em>)</h3>
+<ol>
+  <li>Dump data_e into any folder you would like using Preapp File by dropping <code>data_e.cpk</code> from your P4G install onto the <code>preappfile.exe</code>, NOT INTO THE FOLDER, ON TOP OF THE EXE FILE</li>
+  <li>Make sure the dump you created is named <code>data_e</code> and move it to your Documents folder</li>
+  <li>Download <a href="https://swindlesmccoop.xyz/P4GPC-Randomizer/install.bat"><code>install.bat</code></a> by following the previous link. If it does not automatically download, you can download it by pressing <code>Ctrl</code> + <code>S</code>, and saving it as <code>install.bat</code>, NOT something like <code>install.bat.txt</code></li>
+  <li>Go to where you downloaded the file and double click it</li>
+  <li>Follow the instructions that it gives you</li>
+  <li>Put the final output (when all of the black windows have disappeared) into wherever you load your mods from (Game install's <code>mods</code> folder, Aemulus, Mod Compendium, etc.)</li>
+</ol>
+
+<h3 id="advanced">Level 100 Mafia Boss Steps ("Advanced")</h3>
+<ol>
+  <li>Dump data_e into any folder you would like using Preapp File</li>
+  <li>Download and install <a href="https://msys2.org/">MSYS</a></li>
+  <li>Clone this repo (use <code>git clone https://github.com/swindlesmccoop/P4GPC-Randomizer.git</code> in MSYS for extra points 😃)</li>
+  <li><code>cd</code> into your data_e directory (in MSYS, not Command Prompt)</li>
+  <li>Move the <code>stable.sh</code> script into your extracted data_e directory</li>
+  <li>Run <code>sh stable.sh</code></li>
+  <li>Move any unstable scripts into <code>data_e</code></li>
+  <li>Peform step 6 on each script that you desire (can easily be done with <code>sh *.sh</code>)</li>
+  <li>Move the randomized <code>data_e</code> into your mods directory</li>
+</ol>
+
+<h2 id="faq">FAQ</h2>
+<h3>What are unstable features?</h3>
+<p>Features that might crash the game sometimes or have not been tested enough to have been added to the stable script.</p>
+<h3>Does this work on Vita?</h3>
+<p>lol u wish sucker</p>
+<h3>Why did you shill for noobs by creating installer scripts?</h3>
+<p>I had nothing else to do, and I <em>guess</em> it will expand the range of people who can use the randomizer without any knowledge of computers as well.</p>
+
+<br>
+
+<p style="text-align: center;"><a href="javascript:window.history.back();">Go Back</a><br><a href="/">Go Home</a></p>
