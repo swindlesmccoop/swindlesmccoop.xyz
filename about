@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- Metadata -->
+
+<!-- Styling -->
+<link rel='stylesheet' type='text/css' href="sitewide.css">
+<style>
+h1 {
+  text-align: left;
+  font-family: times-new-roman;
+  color: #00EF00;
+}
+h2 {
+  text-align: left;
+}
+</style>
+
+<!-- Main -->
+<h1>About Me</h1>
+<p>If you're here, you probably don't know much about me. I am interested in a lot of things, just not particularly good at them. I like modding Touhou Luna Nights and Persona 4 Golden, I like writing bash and fish scripts, I like making random videos for my YouTube channel (though it's been pretty inactive as of late), but most of all I just like to sit back, relax, and play video games. I play JRPGs, Shooters, STGs (mostly just Touhou with the occasional Mushihimesama), and most of all: Visual Novels.</p>
+
+<h2>Skills</h2>
+<p>I can work with Linux extensively, and I can write somewhat efficient shell scripts for mostly anything, as long as it doesn't require any kind of GUI to function which is sometimes the case for things that people ask me to do. Recently, I've gotten into Python scripting, but I don't like learning things by the book, I like learning them by putting them into practical action.
+<br><br>
+If you're interested in my work, I do have a <a href=/link/github.html>Github</a>, though it's pretty inactive unless I'm inspired to really work on a project (I'm not, at the moment).
+<br><br>
+I also <i>kinda</i> speedrun Touhou Luna Nights, but I'm not very good and I haven't even submitted a time yet.
+</p>
+
+<br>
+
+<p style="text-align: center;"><a href="../">Go Back</a><br><a href="/">Go Home</a></p>

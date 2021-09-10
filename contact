@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<link rel=stylesheet href="/sitewide.css">
+
+<style>
+h2 {
+text-align: center;
+}
+p {
+text-align: center;
+}
+li {
+text-align: center;
+}
+</style>
+
+

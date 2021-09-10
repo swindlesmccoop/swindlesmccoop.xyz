@@ -1,0 +1,68 @@
+html {
+  background: url(images/lain_d.jpg) no-repeat center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+a {
+  color: #B3C2FF;
+}
+
+@font-face {
+  font-family: yuyuko;
+  src: url(misc/YUYUKO.otf);
+}
+
+h1 {
+  text-align: center;
+  font-family: yuyuko;
+  color: white;
+  font-size: 30px;
+}
+
+h2 {
+  text-align: center;
+  color: #00EF00;
+  font-size: 25px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 20px;
+  color: #00EF00;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  color: white;
+}
+
+li {
+  color: white;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #23388A;
+  color: red;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}

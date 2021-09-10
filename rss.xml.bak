@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="rss.css" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+<title>Serial Experiments Linux</title>
+<description>A blog about cool Linux stuff</description>
+<language>en-us</language>
+<link>https://swindlesmccoop.xyz/rss.xml</link>
+<atom:link href="https://swindlesmccoop.xyz/rss.xml" rel="self" type="application/rss+xml" />
+
+<image>
+<title>Serial Experiments Linux</title>
+<url>https://swindlesmccoop.xyz/images/dalain.png</url>
+<link>https://swindlesmccoop.xyz/rss.xml</link>
+</image>
+  
+<!-- LB -->
+
+<item>
+<title>SSMM</title>
+<guid>https://swindlesmccoop.xyz/2021.html#ssmm</guid>
+<pubDate>Mon, 23 Aug 2021 16:24:23 +0000</pubDate>
+<description><![CDATA[
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>SSMM</title>
+<link rel='stylesheet' type='text/css' href='../style.css'>
+<meta charset='utf-8'/>
+</head>
+<body>
+<h1>SSMM</h1>
+<small>[<a href='../2021.html#ssmm'>link</a>&mdash;<a href='ssmm.html'>standalone</a>]</small>
+<!DOCTYPE html>
+
+<p>SSMM is a new project that I'm working on that is a Simple Script Mod Manager. It will only use GNU CoreUtils and should run on any bash shell on any machine. It is currently being written as a <a href=https://fishshell.com/>Fish</a> script, but when I initialize the git repository, it will be written to work with pure bash with hopefully no prerequisites. It only uses grep, cat, echo, cp, mv, and other commands from the Unix days. Hopefully, I can set up something like <a href=https://git.swindlesmccoop.xyz> in the near future, but for now I will probably try to host it on Github or a similar site. I wanted to buy <a href=https://git.moe> but someone already owns it for their own stuff, so I might make a site that has to do with something similar that is still focused on git and not anything else (besides anime girls, of course)</p>
+<footer>by <strong><a href='https://swindlesmccoop.xyz/'>swindlesmccoop</a></strong></footer>
+</body>
+
+</html>
+]]></description>
+</item>
+
+
+<item>
+<title>lb</title>
+<guid>https://swindlesmccoop.xyz/2021.html#lb/guid>
+<pubDate>Tue, 30 Jul 2021 08:14:44 +0000</pubDate>
+<description><![CDATA[
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>lb</title>
+<link rel='stylesheet' type='text/css' href='../style.css'>
+<meta charset='utf-8'/>
+</head>
+<body>
+<h1></h1>
+<small>[<a href='../2021.html#about'>link</a>&mdash;<a href='about_this_blog.html'>standalone</a>]</small>
+
+<h2></h2>
+<p>
+The first software I am going to review on this blog is the software that I actually use to make it, <code>lb</code>. The "software" is actually a <100 line shell script. I've looked at the entire thing and it's quite cool how it works. It uses sed and grep, and it's able to make an entire publication with just one HTML file. It updates your <code>rss.xml</code>, blog index, and year page (currently at <a href="../2021.html">2021.html</a>). The cool thing about it is how compact and neat it can create a blog. I <i>could</i> customize it, but I don't really want to. I kind of put my own dark theme on it as of the time of writing this, but that's really it, I like it's style really. It can do more in CSS than I can without referencing StackOverflow.
+<br><br>
+The author of the software is a person named <a href="https://lukesmith.xyz/">Luke Smith</a>. If you don't know about him, he makes lots of cool videos on YouTube, mostly about Linux, and he develops simple software for others to use, all while living in a cabin in the middle of the wilderness. He uses Artix Linux and he is generally very friendly towards beginners who have no clue what they're doing.
+<br><br>
+Enough about the author of the software though, let's talk usage!
+<br>
+<code>lb</code> is actually just a bash script that automate making posts to a blog that you can design yourself with CSS and HTML or just use a prestyled version (kind of what I use, though I have a few tweaks for readability). The great part about Linux is that you can just mark the script as executable and send it to <code>/usr/bin</code> and you're all good to go. You can easily create a new post just by <code>cd</code>ing into your site directory and running <code>lb n</code>, with the <code>n</code> standing for <code>new</code>. Then, it pulls up your favorite text editor (in my case Vim) and you make an HTML post. Afterwards, you type <code>lb p</code> intro your terminal and boom, it's ready. It automatically updates <code>2021.html</code>, <code>rss.xml</code>, and it makes a separate page in the <code>blog</code> directory at the root of the site folder. Pretty cool, huh? Admittedly, like every person ever who has any knowledge of scripting, I've edited and tailored it to my own wants, such as permanently setting the directory of the blog, changing the CSS, etc.
+<br><br>
+If you want to make any kind of simple blog, I would tell you to go ahead with <code>lb</code>. It's simple and quick to learn the usage, it's powerful, it's easy, and best of all it really does all of the hard work for you.
+<br><br>
+Qutting Vim...<br>
+swindlesmccoop
+</p>
+<footer>by <strong><a href='https://swindlesmccoop.xyz/'>swindlesmccoop</a></strong></footer>
+</html>
+]]></description>
+</item>
+  
+<item>
+<title>About this blog...</title>
+<guid>https://swindlesmccoop.xyz/2021.#about_this_blog</guid>
+<pubDate>Tue, 27 Jul 2021 20:47:17 +0000</pubDate>
+<description><![CDATA[
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About this blog...</title>
+<link rel='stylesheet' type='text/css' href='../style.css'>
+<meta charset='utf-8'/>
+</head>
+<body>
+<h1></h1>
+<small>[<a href='../2021.html#about'>link</a>&mdash;<a href='about_this_blog.html'>standalone</a>]</small>
+
+<p>If you're new here, you might be wondering what this is about. If you're new here, you might be wondering what this is about. This blog is for posting about various Linux-related subjects, such as the Gentoo fork I'm making to be what LainOS never was, talk about cool CLI programs, or just post cool things you can do with your operating system. I'm also going to do tutorials for my friends that want to get into Linux but don't know how to.<br>Until the next time,<br>swindlesmccoop</p>
+<footer>by <strong><a href='https://swindlesmccoop.cbps.xyz/'>swindlesmccoop</a></strong></footer>
+</body>
+
+</html>
+]]></description>
+</item>
+
+</channel>
+</rss>
+
