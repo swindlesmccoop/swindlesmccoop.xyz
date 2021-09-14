@@ -7,9 +7,14 @@ abbr -a "p" "sudo pacman -S"
 abbr -a "gc" "git clone"
 abbr -a "p4g" "git clone https://github.com/swindlesmccoop/P4GPC-Randomizer.git"
 abbr -a "sitedl" "wget --recursive --domains swindlesmccoop.cbps.xyz --page-requisites swindlesmccoop.cbps.xyz"
-abbr -a "gca" "git push && git commit -a"
+abbr -a "gca" "git push; git commit -a"
 
 #spellign mistakes
 abbr -a "claer" "clear"
 abbr -a "clare" "clear"
 abbr -a "clera" "clear"
+
+#youtube-dl
+abbr -a "ytdl" "youtube-dl"
+abbr -a "mp3" "youtube-dl --audio-format mp3 -k https://youtu.be/0DKPl3ce_FU"
+abbr -a "best" "youtube-dl --audio-format best -k https://youtu.be/0DKPl3ce_FU"
