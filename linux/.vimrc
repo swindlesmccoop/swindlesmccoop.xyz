@@ -22,3 +22,6 @@ augroup numbertoggle
   autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set nornu | endif
   autocmd BufLeave,FocusLost,InsertEnter,WinLeave * if &nu | set rnu | endif
 augroup END
+
+" Fish config syntax highlighting
+autocmd BufNewFile,BufRead *.fish set syntax=bash
