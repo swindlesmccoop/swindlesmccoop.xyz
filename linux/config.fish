@@ -1,3 +1,6 @@
+#configuration
+set fish_greeting
+
 #abbreviations
 abbr -a "enc" "gpg -c --no-symkey-cache --cipher-algo AES256"
 abbr -a "site" "lftp ftp.cbps.xyz"
@@ -16,5 +19,5 @@ abbr -a "clera" "clear"
 
 #youtube-dl
 abbr -a "ytdl" "youtube-dl"
-abbr -a "mp3" "youtube-dl --audio-format mp3 -k https://youtu.be/0DKPl3ce_FU"
-abbr -a "best" "youtube-dl --audio-format best -k https://youtu.be/0DKPl3ce_FU"
+abbr -a "mp3" "youtube-dl --audio-format mp3 -k"
+abbr -a "best" "youtube-dl --audio-format best -k"
