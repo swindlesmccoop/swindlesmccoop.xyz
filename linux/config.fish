@@ -11,6 +11,7 @@ abbr -a "gc" "git clone"
 abbr -a "p4g" "git clone https://github.com/swindlesmccoop/P4GPC-Randomizer.git"
 abbr -a "sitedl" "wget --recursive --domains swindlesmccoop.cbps.xyz --page-requisites swindlesmccoop.cbps.xyz"
 abbr -a "gca" "git push; git commit -a"
+abbr -a ls "ls -lah1"
 
 #spellign mistakes
 abbr -a "claer" "clear"
